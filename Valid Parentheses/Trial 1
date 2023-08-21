@@ -1,0 +1,27 @@
+func isValid(s string) bool {
+ var flag bool
+	for i := 0; i < len(s); i = i + 2 {
+		if s[i] == '(' {
+			if s[i+1] == ')' {
+		          flag=true
+			} else {
+				flag=false
+			}
+		}
+		if s[i] == '[' {
+			if s[i+1] == ']' {
+		          flag=true
+			} else {
+				flag=false
+			}
+		}
+		if s[i] == '{' {
+			if s[i+1] == '}' {
+		          flag=true
+			} else {
+				flag=false
+			}
+		}
+	}
+    return flag
+        }
